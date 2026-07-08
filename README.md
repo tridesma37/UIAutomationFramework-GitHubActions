@@ -1,40 +1,82 @@
-# UI Automation Framework with GitHub Actions
+# UI & API Automation Framework with GitHub Actions
 
-Framework pengujian UI Website menggunakan **Java, Selenium WebDriver, Cucumber, Gradle, JUnit**, dan telah terintegrasi dengan **GitHub Actions** untuk menjalankan automation test secara otomatis.
+Framework automation testing menggunakan:
+- Java + Selenium WebDriver + Cucumber untuk Web UI Testing
+- Python + Pytest + Requests untuk API Testing
+- GitHub Actions untuk menjalankan automation test secara otomatis.
 
 ---
 
 ## Teknologi
+### UI Automation
 - Java 21
-- Gradle
 - Selenium WebDriver
 - Cucumber
 - JUnit 4
+- Gradle
 - WebDriverManager
+
+### API Automation
+- Python 3.14.6
+- Pytest
+- Requests
+- Pytest HTML Report
+- JsonPath-ng
+
+### CI/CD
 - GitHub Actions
 
+
 ---
+
 
 ## Project Structure
-Berikut struktur project GitHub Actions Automation Testing:
-<img width="473" height="517" alt="github action" src="https://github.com/user-attachments/assets/bbe377fc-1325-4232-8b53-5621b9eba9b5" />
+<img width="377" height="641" alt="github action" src="https://github.com/user-attachments/assets/ed205f43-1da2-4ece-ab3e-b347c422deb7" />
 
 ---
 
-## Test Scenarios
+
+## UI Automation Test Scenarios
 Automation test yang diimplementasikan:
 - ✅ Positive Test – Login menggunakan username dan password yang valid.
 - ✅ Negative Test – Login menggunakan password yang salah.
 - ✅ Boundary Test – Login menggunakan username kosong.
 
+## API Automation Test Scenarios
+Authentication API
+- ✅ Register User
+- ✅ Login User
+- ✅ Get User Profile
+- ✅ Negative Register
+
+Student API
+- ✅ Create Student
+- ✅ Get Student
+- ✅ Update Student
+- ✅ Delete Student
+
 ---
 
-## Cucumber Report
+
+## UI Test Report (Cucumber)
 <img width="572" height="604" alt="Cucumber Report" src="https://github.com/user-attachments/assets/6282d61a-7d47-4e1d-8141-a5617aea8d3f" />
 
 ---
+
+## API Test Report (Pytest HTML)
+<img width="1350" height="595" alt="html report" src="https://github.com/user-attachments/assets/36afd3f5-5bd1-47a6-864f-38b22b94bdc0" />
+
+---
+
+
 ## GitHub Actions
-Project ini telah dikonfigurasi menggunakan **GitHub Actions** untuk menjalankan automation test secara otomatis.
+Repository ini menggunakan dua workflow GitHub Actions:
+- UI Automation Test
+- API Automation Test
+Workflow akan berjalan otomatis setiap kali terdapat push ke branch **main**.
+
+---
+
 
 ## Menjalankan GitHub Actions
 1. Clone repository
@@ -56,8 +98,9 @@ git push origin main
 7. Workflow akan berjalan secara otomatis.
    
 ## GitHub Actions Result
-Workflow berhasil dijalankan menggunakan GitHub Actions dengan status **Success**.
-<img width="697" height="194" alt="action" src="https://github.com/user-attachments/assets/bb8a5e16-82f1-4cb6-8532-99433ca064ed" />
+Workflow berhasil dijalankan menggunakan GitHub Actions
+<img width="565" height="235" alt="github action result" src="https://github.com/user-attachments/assets/a7fc0e0d-034b-4385-a9d2-7daa08bfdb30" />
+
 
 ---
 
